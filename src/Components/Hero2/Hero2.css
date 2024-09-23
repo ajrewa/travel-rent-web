@@ -1,0 +1,58 @@
+.hero2{
+    display: flex;
+    width: 100%;
+    background-image: white;
+}
+.hero2-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 2% 0;
+}
+.profile img{
+    border-radius: 50%;
+    height: 150px;
+}
+.profile{
+    text-align: center;
+    background-color:#e0e0e0;
+    margin: 0;
+    width: 23%;
+    border-radius:0;
+    box-shadow: 0 0 10px #697565 (0, 0, 0, 0.1);
+    padding: 10px;
+}
+.profile p {
+    margin: 0;
+}
+.profile .review{
+    font-size: 10px;
+    padding: 5px;
+}
+.profile .rating{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 550px) and (min-width: 320px){
+    .hero2-item{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .profile{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius:0;
+        margin: 0;
+        padding: 10px 0;
+    }
+    .profile:hover{
+        background-color: #697565;
+    }
+    .profile-content{
+        width: 60%;
+    }
+}

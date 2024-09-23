@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.navbar {
+    width: 100%;
+    background-color: #333;
+    position: relative;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.navbar-item {
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.href {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    position: fixed;
+    top: 150px;
+    left: 10%;
+    width: 80%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: flex;
+    max-width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-images img {
+    width: 400px;
+    height: 300px;
+    margin-right: 20px;
+    object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dropdown-images img:hover {
+    transform: scale(1.1);
+}
+
+.dropdown-description {
+    max-width: 40%;
+}
+
+.dropdown-description h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.dropdown-description p {
+    font-size: 1em;
+    color: #333;
+}
+
+.toggle-button {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar-menu.show {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}

@@ -1,0 +1,105 @@
+.footer{
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+.footer-smallcontainer{
+    background-color: #697565;
+    border-radius: 15px;
+    display: block;
+    justify-content: space-between;
+}
+.footer-smallcontainer-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.footer-smallcontainer-2 hr{
+    text-align: center;
+    margin: 5px 15px;
+}
+.footer-smallcontainer-3{
+    display: flex;
+    text-align: center;
+    padding: 10px 6%;
+}
+.footer-smallcontainer-3 p {
+    font-size:12px ;
+    text-align: center;
+}
+.social-links{
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+.social-links a {
+    color: black;
+}
+.social-links a :hover{
+    color: white;
+}
+.policy{
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
+}
+.policy a {
+    margin: 0 5px;
+    text-decoration: underline;
+    color: black;
+}
+.policy a:hover{
+    color: #e7eee7;
+}
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.container-footer-block P ,.container-footer-block-1 p {
+    margin: 0;
+    font-size: 12px;
+}
+.container-footer-block{
+    width: 30%;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+}
+.container-footer-block-1{
+    width: 40%;
+    color: black;
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+}
+h3 , h4 , h5 {
+    margin: 5px 0;
+}
+@media screen and (max-width: 480px) and (min-width: 320px){
+    .container-footer{
+        padding: 0;
+        display: block;
+    }
+    .container-footer-block-1,.container-footer-block{
+        width: 90%;
+        padding:5px 20px ;
+    }
+    .policy a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 630px) and (min-width: 320px){
+    .footer-smallcontainer-1{
+        display: block;
+    }
+}
+@media screen and (max-width: 1440px) and (min-width: 480px){
+    .container-footer-block-1{
+        width: 40%;
+    }
+    .container-footer-block{
+        width: 50%;
+    }
+}
